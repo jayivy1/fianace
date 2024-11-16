@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cal {
+
+    width: 280px;
+    border: 1px solid #333;
+    background-color: #ccc;
+    padding: 2px;
+}
+
+.cal form{
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-auto-rows: 65px;
+    grid-gap: 5px;
+}
+
+.cal form input{
+    border: 2px solid #333;
+    cursor: pointer;
+    font-size: 19px
+}
+
+.cal form input:hover{
+    box-shadow: 1px 1px 2px #333;
+}
+
+.cal form .clear{
+    background-color: #ed4848;
+}
+
+.cal form .opr{
+    background-color: rgb(238, 130, 238);
+}
+ .cal form .dot{
+    background-color: rgb(99, 162, 184);
+ }
+
+ .cal form input[type='text']{
+    grid-column: span 4;
+    text-align: right;
+    padding: 0 10px;
+ }
+
+ .cal form .clear{
+    grid-column: span 3;
+ }
+
+ .cal form .result{
+    grid-column: span 1;
+ }

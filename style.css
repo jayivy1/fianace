@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--light-col: #28773c;
+	--dark-col: #B59B80;
+	--second-col: #b76eb8;	
+}
+
+body {
+	background-color: #53483e;
+  	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
+	font-family: 'Roboto';
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.coin-profile,
+.nasdaq-profile,
+.kospi-profile,
+.nikkei-profile,
+.excahnge_rate-profile,
+.gold-profile {
+	background-size: cover;
+	border-radius: 5px;
+	box-shadow: 0 15px 55px rgba(0, 0, 0, 0.5);
+	color: #50caba;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	width: 250px;
+	height: 250px;
+	z-index: 3;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.coin-profile {
+	background-image: url('https://i.etsystatic.com/11603536/r/il/834030/1426442143/il_570xN.1426442143_jjt8.jpg');
+	bottom: 560px; /* 위쪽으로 이동 */
+	left: 50%; /* 가운데 위치 */
+	
+}
+
+.nasdaq-profile {
+	background-image: url('https://pbs.twimg.com/profile_images/1521140484512620544/Ev6EIPlD_400x400.jpg');
+	bottom: 200px; /* 위쪽으로 이동 */
+	left: 50%; /* 가운데 위치 */
+  
+}
+
+.kospi-profile {
+	background-image: url('https://yt3.googleusercontent.com/ytc/AGIKgqPtEeB9lKqdW5rSLjqTBo7qAyl5Zf8yMSTvbf-I=s900-c-k-c0x00ffffff-no-rj');
+	bottom: 560px; /* 위쪽으로 이동 */
+	left: 70%; /* 오른쪽으로 이동 */
+}
+
+.nikkei-profile {
+	background-image: url('https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1487975978/jacwmpnddip0alwykzoq.png');
+	bottom: 200px; /* 위쪽으로 이동 */
+	left: 70%; /* 오른쪽으로 이동 */
+}
+
+.excahnge_rate-profile {
+	background-image: url('https://media.istockphoto.com/id/1183477536/ko/%EB%B2%A1%ED%84%B0/%EB%8B%AC%EB%9F%AC-%ED%99%98%EC%9C%A8-%ED%98%84%EC%9E%AC-%ED%99%98%EC%9C%A8-%EB%B3%80%EB%8F%99-%EB%B2%A1%ED%84%B0-%EB%8B%AC%EB%9F%AC-%EC%A7%80%ED%8F%90-%EB%B0%8F-%EB%8F%99%EC%A0%84-%EC%95%84%EC%9D%B4%EC%BD%98-%EC%9D%BC%EB%9F%AC%EC%8A%A4%ED%8A%B8-%EB%B0%8F-%EB%B2%A1%ED%84%B0.jpg?s=170667a&w=0&k=20&c=kCvXzdDAIX5X6B-YvKJCjCKcQR_M6XMx74i594Y0XCs=');
+	bottom: 200px; /* 위쪽으로 이동 */
+	left: 30%; /* 오른쪽으로 이동 */
+}
+
+.gold-profile {
+	background-image: url('https://thumbs.dreamstime.com/b/flat-diamond-gold-icon-isolated-background-vector-illustration-eps-91581142.jpg');
+	bottom: 560px; /* 위쪽으로 이동 */
+	left: 30%; /* 오른쪽으로 이동 */
+}
+
+.today-container {
+	
+	justify-content: flex-start; /* 왼쪽 정렬 */
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.today {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 55px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	margin-top: -15px;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	
+	flex-direction: column;
+	margin: 0 15px;
+	
+}
+
+.today h1 {
+	margin-bottom: 0;
+}
+
+.time small {
+	color: #2c2929;
+}
+
+.us-container {
+	
+	justify-content: flex-end; /* 오른쪽 정렬 */
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 60px; /* 오른쪽 간격 설정 */
+}
+
+.us {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 55px rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+	z-index: 2;
+	flex-direction: column;
+	margin: 0 15px;
+}
+
+.us h1 {
+	margin-bottom: 0;
+}
+
+.us small {
+	color: #2c2929;
+}

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+
+:root {
+	--light-col: #28773c;
+	--dark-col: #B59B80;
+	--second-col: #b76eb8;	
+}
+
+body {
+	background-color: #53483e;
+  	background-image: radial-gradient(circle, var(--light-col), var(--dark-col));
+}
